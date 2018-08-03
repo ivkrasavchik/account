@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>home.html</h3>
+    {% if user.username %}
+        <h1>ID: {{ user.id }}</h1>
+        <h1>username: {{ user.username}}</h1>
+        <li><a href="/logout/">Выйти</a></li>
+    {% else %}
+        <h1>Никого нет дома</h1>
+
+
+        {% block login %}
+            <li><a href="/login/">Войти</a></li>
+        {% endblock %}
+
+    {% endif %}
+
+</body>
+</html>
