@@ -20,4 +20,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('acc.urls')),
     url(r'^login/', include('acc.urls')),
+    url(r'^register/', include('acc.urls')),
+    url(r'^changeSet/', include('acc.urls')),
+    url(r'^changePass/', include('acc.urls')),
+    url(r'^eregister/', include('acc.urls')),
 ]
